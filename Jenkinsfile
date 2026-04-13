@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git "https://github.com/vijaymenaria04/cicd-demo.git"
+                git branch: 'main',
+                    url: 'https://github.com/vijaymenaria04/cicd-demo.git'
             }
         }
 
